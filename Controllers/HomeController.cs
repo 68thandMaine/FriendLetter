@@ -15,5 +15,11 @@ namespace FriendLeter.Controllers
     {
       return View();
     }
+
+    [Route("/journal")]
+    public ActionResult Journal()
+    {
+      return View();
+    }
   }
 }
