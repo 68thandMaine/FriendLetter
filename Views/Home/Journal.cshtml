@@ -4,10 +4,13 @@
     <title>My Travel Journal</title>
   </head>
   <body>
-    <h1>Travel Journal</h1>
-    <h6>January 1st, 2000</h6>
-    <p>
-    In faucibus quis neque ut commodo. Nulla dolor sem, sagittis eget nunc sit amet, auctor scelerisque odio. Quisque ut condimentum est. Cras rutrum lorem purus, eu vehicula lectus pulvinar non. Mauris eleifend est ut justo elementum, sed lobortis nunc fermentum. Morbi posuere eu arcu sodales sollicitudin. Duis tristique ex elit, a vestibulum purus sagittis in.
-    </p>
+    <h1>Hello From Afar</h1>
+    <p>Dear <strong>@Model.GetRecipient()</strong>,</p>
+    <p>How are you? I hope that you are having a nice weekend. I'm vacationing in Iceland while I learn programming! </p>
+    <p><strong>@Model.GetRecipient()</strong>, you would not believe how cold it is here. I should have gone to Hawaii instead.</p>
+    <p>But I like programming a lot, so I've got that going for me. </p>
+    <p>Looking forward to seeing you soon. I'll bring you back a souvenir. </p>
+    <p>Cheers,</p>
+    <p>Travel Enthusiast <strong> @Model.GetSender() </strong></p>
   </body>
 </html>

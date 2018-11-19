@@ -1,11 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using FriendLetter.Models;
 
 namespace FriendLeter.Controllers
 {
   public class HomeController : Controller
   {
-    [Route("/hello")]
-    public string Hello() { return "Hello friend!";}
+    [Route("/Journal")]
+    public ActionResult Journal()
+    {
+      LetterVariable myLetterVariable = new LetterVariable();
+      myLetterVariable.SetRecipient("Lina");
+      myLetterVariable.SetSender("Jake");
+      return View(myLetterVariable);
+    }
 
     [Route("/goodbye")]
     public string Goodbye() { return "Goodbye friend";}
@@ -16,10 +23,5 @@ namespace FriendLeter.Controllers
       return View();
     }
 
-    [Route("/journal")]
-    public ActionResult Journal()
-    {
-      return View();
-    }
   }
 }
