@@ -33,7 +33,7 @@ namespace FriendLetter
         });
         app.Run(async (context) =>
         {
-          await context.Response.WriteAsync("Hello World!");
+          await context.Response.WriteAsync("Oops! It looks like you did not establish a correct MVC route. The good news is that you have properly setup your Startup.cs and Program.cs files correctly.");
           });
         }
       }
